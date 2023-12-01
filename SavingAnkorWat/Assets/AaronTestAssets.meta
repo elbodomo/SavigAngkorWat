@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9f0f731818eb1974ba0f221efa503a83
+=======
+guid: 3d867add8d9ae7b4bbdbaef17ca4a752
+>>>>>>> UnityVrBranch
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

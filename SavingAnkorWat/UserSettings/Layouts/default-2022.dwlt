@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,11 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 38
+=======
+  controlID: 103
+>>>>>>> UnityVrBranch
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +148,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 39
+=======
+  controlID: 104
+>>>>>>> UnityVrBranch
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +178,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 40
+=======
+  controlID: 105
+>>>>>>> UnityVrBranch
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,8 +307,13 @@ MonoBehaviour:
     y: 0
     width: 499
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> UnityVrBranch
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -439,9 +456,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 68bd0000
       m_LastClickedID: 0
       m_ExpandedIDs: c4a7feff84a8feff32a9feff0caafeff
+=======
+      m_SelectedIDs: 88c1ffff
+      m_LastClickedID: -15992
+      m_ExpandedIDs: c4c1ffffd0c1ffff24fbffff
+>>>>>>> UnityVrBranch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -835,9 +858,13 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -0.7776198, y: 1.0607553, z: -6.998262}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Value: {x: -0.7776198, y: 1.0607553, z: -6.998262}
+>>>>>>> UnityVrBranch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -883,9 +910,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.046832364, y: 0.950515, z: -0.17769189, w: -0.2505169}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+    m_Value: {x: -0.04683225, y: 0.9505126, z: -0.17769144, w: -0.25051627}
+>>>>>>> UnityVrBranch
   m_Size:
     m_Target: 10
     speed: 2
@@ -960,7 +991,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
+=======
+    - Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/Controllers
+>>>>>>> UnityVrBranch
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -968,6 +1003,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\GitHub\SavigAngkorWat\SavingAnkorWat
@@ -978,6 +1014,18 @@ MonoBehaviour:
     m_SelectedIDs: 14410000
     m_LastClickedID: 16660
     m_ExpandedIDs: 00000000e2bc000000ca9a3b
+=======
+  - Assets/Samples/XR Interaction Toolkit/2.5.2/Starter Assets/Prefabs/Controllers
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: H:\Uni\SavingAngkorWat\SavigAngkorWat\SavingAnkorWat
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 16}
+    m_SelectedIDs: b2780000
+    m_LastClickedID: 30898
+    m_ExpandedIDs: 00000000b26e0000667800006a7800006e780000727800008e78000000ca9a3bffffff7f
+>>>>>>> UnityVrBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1005,7 +1053,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e2bc0000
+=======
+    m_ExpandedIDs: 00000000b26e0000
+>>>>>>> UnityVrBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1083,9 +1135,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 545.60004
-    width: 1135.8
-    height: 229.79999
+    y: 691
+    width: 1420
+    height: 308
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1138,7 +1190,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 648
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

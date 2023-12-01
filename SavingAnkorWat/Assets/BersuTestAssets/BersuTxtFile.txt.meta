@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 82fd4f78254f6014ba86c2afc3229332
+=======
+guid: c58d6c90707fee44e8bf0f63c316c8b2
+>>>>>>> UnityVrBranch
 TextScriptImporter:
   externalObjects: {}
   userData: 
