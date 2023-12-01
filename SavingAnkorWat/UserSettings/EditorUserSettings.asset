@@ -12,7 +12,11 @@ EditorUserSettings:
       value: 5b055754515408585857097a14725944461640732f7871357c7b4960b7b7366c
       flags: 0
     RecentlyUsedSceneGuid-2:
+<<<<<<< HEAD
       value: 0604025100560859090b547245710e4442154979757e7236287c4465e7b16069
+=======
+      value: 5305525f5051505d5b580f7b43260e441216482c7a2e77662e281b65b2e33569
+>>>>>>> ZoeTest
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
