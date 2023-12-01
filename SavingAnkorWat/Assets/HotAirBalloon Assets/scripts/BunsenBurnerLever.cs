@@ -5,37 +5,43 @@ using UnityEngine;
 public class BunsenBurnerLever : MonoBehaviour
 {
     private float LeverRot;
-    public float LeverRange = 30.0f;
 
     public GameObject BunsenBurner;
-    private Material BunsenBurnerMat;
 
     public Material darkgrey;
-    public Material redgray;
     public Material red;
+    public Material redgray;
+    
 
-    // Start is called before the first frame update
+
+
+    // Start is called before the first frame update 
     void Start()
     {
-        BunsenBurnerMat = GetComponent<Material>();
+        BunsenBurner.GetComponent<Renderer>().material = darkgrey;
     }
 
-    // Update is called once per frame
+    // Update is called once per frame 
     void Update()
     {
-        LeverRot = transform.localRotation.z;
+        LeverRot = transform.localRotation.z; //angle rotation from the lever
+        Debug.Log(LeverRot);
 
-        if (LeverRot <= LeverRange)
+        
+        if (LeverRot <= 0.3f) //lifting the lever up
         {
-            BunsenBurnerMat = redgray;
+            BunsenBurner.GetComponent<Renderer>().material = red;
+            Debug.Log("material is now red");
         }
-        else if (LeverRot >= LeverRange)
+        else if (LeverRot >= 0.8f ) //lifting the lever down
         {
-            BunsenBurnerMat = red;
+            BunsenBurner.GetComponent<Renderer>().material = redgray;
+            Debug.Log("material is now redgray");
         }
-        else
+        else //lever in original position kinda
         {
-            BunsenBurnerMat = darkgrey;
+            BunsenBurner.GetComponent<Renderer>().material = darkgrey;
+            Debug.Log("material is now darkgray");
         }
 
     }
