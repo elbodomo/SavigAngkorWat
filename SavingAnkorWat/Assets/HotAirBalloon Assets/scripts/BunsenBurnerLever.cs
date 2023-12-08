@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BunsenBurnerLever : MonoBehaviour
@@ -7,12 +8,15 @@ public class BunsenBurnerLever : MonoBehaviour
     private float LeverRot;
 
     public GameObject BunsenBurner;
+    public GameObject HotAirBalloonEmpty;
 
     public Material darkgrey;
     public Material red;
     public Material redgray;
-    
 
+    public bool reachGoal = false;
+
+    private float verticalSpeed = 0.1f;
 
 
     // Start is called before the first frame update 
@@ -24,25 +28,33 @@ public class BunsenBurnerLever : MonoBehaviour
     // Update is called once per frame 
     void Update()
     {
-        LeverRot = transform.localRotation.z; //angle rotation from the lever
-        Debug.Log(LeverRot);
+        if (!reachGoal)
+        {
+            LeverRot = transform.localRotation.z; //angle rotation from the lever
+            Debug.Log(LeverRot);
 
+
+            if ((LeverRot <= 0.3f) && (this.transform.position.y < 20.0f)) //lifting the lever up
+            {
+                BunsenBurner.GetComponent<Renderer>().material = red;
+                HotAirBalloonEmpty.transform.Translate(Vector3.up * verticalSpeed);
+
+                //Debug.Log("material is now red");
+            }
+            else if ((LeverRot >= 0.8f) && (this.transform.position.y > -20.0f)) //lifting the lever down
+            {
+                BunsenBurner.GetComponent<Renderer>().material = redgray;
+                HotAirBalloonEmpty.transform.Translate(Vector3.down * verticalSpeed);
+                //Debug.Log("material is now redgray");
+            }
+            else //lever in original position kinda
+            {
+                BunsenBurner.GetComponent<Renderer>().material = darkgrey;
+                HotAirBalloonEmpty.transform.Translate(new Vector3(0, 0, 0) * verticalSpeed);
+                //Debug.Log("material is now darkgray");
+            }
+        }
         
-        if (LeverRot <= 0.3f) //lifting the lever up
-        {
-            BunsenBurner.GetComponent<Renderer>().material = red;
-            Debug.Log("material is now red");
-        }
-        else if (LeverRot >= 0.8f ) //lifting the lever down
-        {
-            BunsenBurner.GetComponent<Renderer>().material = redgray;
-            Debug.Log("material is now redgray");
-        }
-        else //lever in original position kinda
-        {
-            BunsenBurner.GetComponent<Renderer>().material = darkgrey;
-            Debug.Log("material is now darkgray");
-        }
 
     }
 }
