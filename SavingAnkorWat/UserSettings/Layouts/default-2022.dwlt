@@ -19,12 +19,17 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Scene
 <<<<<<< HEAD
   m_RootView: {fileID: 6}
 =======
   m_RootView: {fileID: 4}
 >>>>>>> HotAirBalloonMovement
+=======
+  m_Title: Inspector
+  m_RootView: {fileID: 2}
+>>>>>>> waterUpdate
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -234,12 +239,20 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
   controlID: 4427
 --- !u!114 &8
 >>>>>>> HotAirBalloonMovement
+=======
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 1
+  controlID: 128
+--- !u!114 &6
+>>>>>>> waterUpdate
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,6 +278,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1536
     height: 772.8
   m_MinSize: {x: 875, y: 300}
@@ -283,6 +297,15 @@ MonoBehaviour:
   controlID: 4428
 --- !u!114 &9
 >>>>>>> HotAirBalloonMovement
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 129
+--- !u!114 &7
+>>>>>>> waterUpdate
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,6 +329,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1536
     height: 30
@@ -343,6 +367,15 @@ MonoBehaviour:
   controlID: 4429
 --- !u!114 &10
 >>>>>>> HotAirBalloonMovement
+=======
+    width: 1517
+    height: 947
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 45
+--- !u!114 &8
+>>>>>>> waterUpdate
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,6 +394,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1172
     height: 722.8
@@ -381,6 +415,15 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &11
 >>>>>>> HotAirBalloonMovement
+=======
+    width: 1517
+    height: 573
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 46
+--- !u!114 &9
+>>>>>>> waterUpdate
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,9 +445,9 @@ MonoBehaviour:
   - {fileID: 11}
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1172
     height: 428
   m_MinSize: {x: 200, y: 50}
@@ -420,6 +463,13 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
+=======
+    width: 170
+    height: 573
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+>>>>>>> waterUpdate
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -436,12 +486,17 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_Name: ProjectBrowser
+=======
+  m_Name: SceneView
+>>>>>>> waterUpdate
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 711
     width: 1483
@@ -455,6 +510,21 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &13
+=======
+    x: 170
+    y: 0
+    width: 1347
+    height: 573
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &11
+>>>>>>> waterUpdate
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -464,12 +534,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 >>>>>>> HotAirBalloonMovement
   m_Name: 
+=======
+  m_Name: ConsoleWindow
+>>>>>>> waterUpdate
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 290.4
     y: 0
@@ -487,12 +562,28 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
 >>>>>>> HotAirBalloonMovement
+=======
+    x: 0
+    y: 573
+    width: 1517
+    height: 374
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> waterUpdate
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
+<<<<<<< HEAD
   m_Selected: 0
 <<<<<<< HEAD
   m_LastSelected: 1
+=======
+  - {fileID: 17}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 2
+>>>>>>> waterUpdate
 --- !u!114 &12
 =======
   m_LastSelected: 0
@@ -518,6 +609,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 0
     y: 501.6
@@ -652,6 +744,19 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
+=======
+    x: 1517
+    y: 0
+    width: 403
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 0
+>>>>>>> waterUpdate
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -673,10 +778,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1172
     y: 73.6
     width: 363
     height: 701.8
+=======
+    x: 170
+    y: 73
+    width: 1345
+    height: 552
+>>>>>>> waterUpdate
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -708,7 +820,11 @@ MonoBehaviour:
   m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 578, y: 669}
+=======
+  m_TargetSize: {x: 1345, y: 531}
+>>>>>>> waterUpdate
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -723,10 +839,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -289
     m_HBaseRangeMax: 289
     m_VBaseRangeMin: -334.5
     m_VBaseRangeMax: 334.5
+=======
+    m_HBaseRangeMin: -672.5
+    m_HBaseRangeMax: 672.5
+    m_VBaseRangeMin: -265.5
+    m_VBaseRangeMax: 265.5
+>>>>>>> waterUpdate
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -735,7 +858,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -744,16 +867,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 578
       height: 669
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 289, y: 334.5}
+=======
+      width: 1345
+      height: 531
+    m_Scale: {x: 1.01, y: 1.01}
+    m_Translation: {x: 673.565, y: 262.84497}
+>>>>>>> waterUpdate
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -289
       y: -334.5
       width: 578
@@ -761,6 +892,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 578, y: 690}
+=======
+      x: -666.89606
+      y: -260.24255
+      width: 1331.6832
+      height: 525.74255
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1345, y: 552}
+>>>>>>> waterUpdate
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -790,6 +930,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 73.6
     width: 289.4
     height: 407
@@ -798,6 +939,11 @@ MonoBehaviour:
     width: 249
     height: 690
 >>>>>>> HotAirBalloonMovement
+=======
+    y: 73
+    width: 169
+    height: 552
+>>>>>>> waterUpdate
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -810,6 +956,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
       m_SelectedIDs: 7a37feff
@@ -820,6 +967,12 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: f0e9ffffdef7ffffe0f7ffff0e7600004476000060760000
 >>>>>>> HotAirBalloonMovement
+=======
+      scrollPos: {x: 0, y: 141}
+      m_SelectedIDs: 84afffff
+      m_LastClickedID: -20604
+      m_ExpandedIDs: eeaeffff84afffff50f8ffff72f8ffff22fbffff6078000064780000687800006a7800007e780000a2780000
+>>>>>>> waterUpdate
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -869,6 +1022,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 290.4
     y: 73.6
     width: 879.6
@@ -879,6 +1033,12 @@ MonoBehaviour:
     width: 651
     height: 690
 >>>>>>> HotAirBalloonMovement
+=======
+    x: 170
+    y: 73
+    width: 1345
+    height: 552
+>>>>>>> waterUpdate
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -894,12 +1054,17 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: -164.79999, y: -26.399994}
 =======
       snapOffset: {x: -170.40002, y: -26.400024}
       snapOffsetDelta: {x: 0, y: 0}
 >>>>>>> HotAirBalloonMovement
+=======
+      snapOffset: {x: -170.40002, y: -26.400024}
+      snapOffsetDelta: {x: 0, y: 0}
+>>>>>>> waterUpdate
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -963,7 +1128,11 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
       snapOffset: {x: 0, y: 197}
+=======
+      snapOffset: {x: 67.5, y: 86}
+>>>>>>> waterUpdate
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-component-tools
@@ -1191,6 +1360,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 19.304108, y: -69.71077, z: 14.922343}
@@ -1199,6 +1369,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 32.7889, y: 24.45708, z: -8.087247}
 >>>>>>> HotAirBalloonMovement
+=======
+    m_Target: {x: 10.772271, y: -12.729933, z: 6.927799}
+    speed: 2
+    m_Value: {x: 10.772271, y: -12.729933, z: 6.927799}
+>>>>>>> waterUpdate
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1245,6 +1420,7 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
     speed: 2
     m_Value: {x: -0.000000005377078, y: 0.7071068, z: -0.000000012981414, w: -0.70710677}
@@ -1261,11 +1437,21 @@ MonoBehaviour:
     speed: 2
     m_Value: 46.386402
 >>>>>>> HotAirBalloonMovement
+=======
+    m_Target: {x: 0.3410089, y: 0.518271, z: -0.23634174, w: 0.7479093}
+    speed: 2
+    m_Value: {x: 0.34098887, y: 0.5182406, z: -0.23632786, w: 0.7478654}
+  m_Size:
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+>>>>>>> waterUpdate
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1273,6 +1459,10 @@ MonoBehaviour:
     m_Speed: 1.08046
     m_SpeedNormalized: 0.53999996
 >>>>>>> HotAirBalloonMovement
+=======
+    m_Speed: 0.6806609
+    m_SpeedNormalized: 0.34000045
+>>>>>>> waterUpdate
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1312,6 +1502,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 507
     y: 94
     width: 1532
@@ -1322,6 +1513,12 @@ MonoBehaviour:
     width: 1482
     height: 215
 >>>>>>> HotAirBalloonMovement
+=======
+    x: 0
+    y: 646
+    width: 1516
+    height: 353
+>>>>>>> waterUpdate
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1410,7 +1607,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/HotAirBalloon Assets/scripts
+=======
+    - Assets/EliasTestAssets/Scripts
+>>>>>>> waterUpdate
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1418,16 +1619,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/HotAirBalloon Assets/scripts
+=======
+  - Assets/EliasTestAssets/Scripts
+>>>>>>> waterUpdate
   m_LastFoldersGridSize: 16
   m_LastProjectPath: H:\GitHub\SavigAngkorWat\SavingAnkorWat
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 49}
     m_SelectedIDs: c6780000
     m_LastClickedID: 30918
     m_ExpandedIDs: 00000000f2760000f4760000f6760000b0780000
+=======
+    scrollPos: {x: 0, y: 103}
+    m_SelectedIDs: 02780000
+    m_LastClickedID: 30722
+    m_ExpandedIDs: 000000003476000036760000387600003a76000000ca9a3bffffff7f
+>>>>>>> waterUpdate
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1455,7 +1667,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f2760000f4760000f6760000
+=======
+    m_ExpandedIDs: 000000003476000036760000387600003a760000
+>>>>>>> waterUpdate
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1480,9 +1696,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: 84afffff
+    m_LastClickedInstanceID: -20604
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> waterUpdate
     m_ExpandedInstanceIDs: c6230000187d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1534,11 +1756,49 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 2249
     y: 726.5
     width: 920
     height: 250
 =======
+=======
+    x: 0
+    y: 646
+    width: 1516
+    height: 353
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+>>>>>>> waterUpdate
     x: 0
     y: 687
     width: 1379
@@ -1555,7 +1815,122 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/EliasTestAssets/Prefabs
+    m_Globs: []
+    m_OriginalText: 
+    m_ImportLogFlags: 0
+    m_FilterByTypeIntersection: 0
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/EliasTestAssets/Prefabs
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: H:\Uni\SavingAngkorWat\SavigAngkorWat\SavingAnkorWat
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 35}
+    m_SelectedIDs: 00780000
+    m_LastClickedID: 30720
+    m_ExpandedIDs: 000000003476000036760000387600003a76000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000003476000036760000387600003a760000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 84afffff
+    m_LastClickedInstanceID: -20604
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: WaterLeak
+      m_OriginalName: WaterLeak
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 33342
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 0
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 11}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 200
+>>>>>>> waterUpdate
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1577,9 +1952,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1483
     y: 73
     width: 436
+=======
+    x: 1517
+    y: 73
+    width: 402
+>>>>>>> waterUpdate
     height: 926
   m_SerializedDataModeController:
     m_DataMode: 0

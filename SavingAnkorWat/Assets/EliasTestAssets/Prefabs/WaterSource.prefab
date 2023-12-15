@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 500234122503700798}
@@ -160,10 +160,15 @@ MonoBehaviour:
   isSource: 1
   DrainFlow: 3
   isDrain: 0
+  LeakLimitPercentage: 15
+  isLeak: 0
   isBlocked: 0
   waterLevel: {fileID: 807474687299525314}
-  InPut: {fileID: 0}
+  LeakCleared:
+    m_PersistentCalls:
+      m_Calls: []
   blockade: {fileID: 7269423108965294704}
+  InPuts: []
   OutPuts: []
 --- !u!1 &7269423108965294704
 GameObject:
@@ -193,9 +198,9 @@ Transform:
   m_GameObject: {fileID: 7269423108965294704}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.099999994, y: 0.19999999, z: 0.099999994}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.6, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 500234122503700798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -281,17 +286,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e0649b418218eb4aa1316d6558878cf,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e0649b418218eb4aa1316d6558878cf,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e0649b418218eb4aa1316d6558878cf,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e0649b418218eb4aa1316d6558878cf,
         type: 3}
