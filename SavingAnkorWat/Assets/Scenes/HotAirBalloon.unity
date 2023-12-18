@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 240668097}
-  - component: {fileID: 240668096}
   m_Layer: 0
   m_Name: HotAirBalloonEmpty
   m_TagString: Untagged
@@ -140,20 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &240668096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240668095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd9edbbf69a1af848b92ac32876fcc83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LeverScript: {fileID: 574390997}
-  destination: {fileID: 1473937988}
 --- !u!4 &240668097
 Transform:
   m_ObjectHideFlags: 0
@@ -440,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BunsenBurner: {fileID: 448653070}
-  HotAirBalloonEmpty: {fileID: 240668095}
+  destination: {fileID: 1473937988}
   darkgrey: {fileID: 2100000, guid: 4f1b2cc4f2e170647ad65c324e05629a, type: 2}
   red: {fileID: 2100000, guid: c32f0189877dcbc45a52e55d64f58ec7, type: 2}
   redgray: {fileID: 2100000, guid: 54e344526b2f898439f1583843b29163, type: 2}
@@ -1768,6 +1753,7 @@ GameObject:
   - component: {fileID: 1473937991}
   - component: {fileID: 1473937990}
   - component: {fileID: 1473937989}
+  - component: {fileID: 1473937993}
   m_Layer: 0
   m_Name: Destination
   m_TagString: Untagged
@@ -1856,12 +1842,26 @@ Transform:
   m_GameObject: {fileID: 1473937988}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 20, z: 0}
+  m_LocalPosition: {x: 100, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1473937993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473937988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9edbbf69a1af848b92ac32876fcc83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeverScript: {fileID: 574390997}
+  HotAirBalloon: {fileID: 240668095}
 --- !u!1 &1591822836
 GameObject:
   m_ObjectHideFlags: 0

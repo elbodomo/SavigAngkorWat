@@ -8,7 +8,7 @@ public class BunsenBurnerLever : MonoBehaviour
     private float LeverRot;
 
     public GameObject BunsenBurner;
-    public GameObject HotAirBalloonEmpty;
+    public GameObject destination;
 
     public Material darkgrey;
     public Material red;
@@ -34,23 +34,23 @@ public class BunsenBurnerLever : MonoBehaviour
             Debug.Log(LeverRot);
 
 
-            if ((LeverRot <= 0.3f) && (this.transform.position.y < 20.0f)) //lifting the lever up
+            if ((LeverRot <= 0.3f) && (destination.transform.position.y > -60.0f)) //lifting the lever up
             {
                 BunsenBurner.GetComponent<Renderer>().material = red;
-                HotAirBalloonEmpty.transform.Translate(Vector3.up * verticalSpeed);
+                destination.transform.Translate(Vector3.down * verticalSpeed);
 
                 //Debug.Log("material is now red");
             }
-            else if ((LeverRot >= 0.8f) && (this.transform.position.y > -20.0f)) //lifting the lever down
+            else if ((LeverRot >= 0.8f) && (destination.transform.position.y < -20.0f)) //lifting the lever down
             {
                 BunsenBurner.GetComponent<Renderer>().material = redgray;
-                HotAirBalloonEmpty.transform.Translate(Vector3.down * verticalSpeed);
+                destination.transform.Translate(Vector3.up * verticalSpeed);
                 //Debug.Log("material is now redgray");
             }
             else //lever in original position kinda
             {
                 BunsenBurner.GetComponent<Renderer>().material = darkgrey;
-                HotAirBalloonEmpty.transform.Translate(new Vector3(0, 0, 0) * verticalSpeed);
+                destination.transform.Translate(new Vector3(0, 0, 0) * verticalSpeed);
                 //Debug.Log("material is now darkgray");
             }
         }
