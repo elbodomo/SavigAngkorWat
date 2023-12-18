@@ -145,4 +145,12 @@ public class WaterScript : MonoBehaviour
             }
         }
     }
+    public void doBlock()
+    {
+        isBlocked = true;
+    }
+    public void doUnBlock()
+    {
+        isBlocked = false;
+    }
 }
