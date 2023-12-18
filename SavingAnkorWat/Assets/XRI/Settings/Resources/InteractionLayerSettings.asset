@@ -15,7 +15,11 @@ MonoBehaviour:
   m_LayerNames:
   - Default
   - RayInteractable
+<<<<<<< HEAD
   - BambooDam
+=======
+  - BambooLever
+>>>>>>> origin/AaronChoppingBamboo
   - 
   - 
   - 
