@@ -153,13 +153,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf5ca55a5bdf1c4991e04c969d939ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaterLevel: 0
-  WaterMax: 40
+  WaterLevel: 40
+  WaterMax: 30
+  WaterPercentage: 1
+  minimumFlowPercentage: 2
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
   DrainFlow: 3
   isDrain: 0
+  OutflowMinPercentage: 0
+  LimitPercentage: 10
+  DrainLimitPercentage: 10
   LeakLimitPercentage: 15
   isLeak: 0
   isBlocked: 0
@@ -167,7 +172,9 @@ MonoBehaviour:
   LeakCleared:
     m_PersistentCalls:
       m_Calls: []
+  isFixed: 0
   blockade: {fileID: 2112874693328714978}
+  OutFlowRate: 10
   InPuts: []
   OutPuts: []
 --- !u!1 &2112874693328714978
@@ -188,7 +195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3853153510734438315
 Transform:
   m_ObjectHideFlags: 0
