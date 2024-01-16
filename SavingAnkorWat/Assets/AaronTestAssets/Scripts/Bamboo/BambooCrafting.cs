@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody), typeof(XRGrabInteractable), typeof(Bamboo))]
 public class BambooCrafting : MonoBehaviour
@@ -10,6 +11,7 @@ public class BambooCrafting : MonoBehaviour
     [SerializeField] private float craftCheckPadding = 0.1f;
     [SerializeField] private InteractionLayerMask layerMaskAfterCompletion;
     [SerializeField] private float maxCraftLength = 0.5f;
+    [SerializeField] private float textHeight = 1f;
 
     private XRGrabInteractable interactable;
 
@@ -17,6 +19,7 @@ public class BambooCrafting : MonoBehaviour
     public Bamboo Bamboo { get; private set; }
     private BambooCrafting parentBamboo;
     private Rigidbody rb;
+    private TextMeshProUGUI textMeshProUGUI;
 
     private List<BambooCrafting> childBamboos = new List<BambooCrafting>();
 
@@ -28,6 +31,9 @@ public class BambooCrafting : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         interactable = GetComponent<XRGrabInteractable>();
         interactable.selectExited.AddListener(OnRelease);
+        textMeshProUGUI = GetComponentInChildren<TextMeshProUGUI>();
+
+        textMeshProUGUI.enabled = false;
     }
 
     private void OnRelease(SelectExitEventArgs args)
@@ -95,6 +101,9 @@ public class BambooCrafting : MonoBehaviour
 
         other.SetParentBamboo(this);
 
+        // activate TextMesh
+        textMeshProUGUI.enabled = true;
+
 
         float totalWidth = Bamboo.BambooRadius * 2f;
         float totalHeight = Bamboo.BambooHeight;
@@ -110,6 +119,12 @@ public class BambooCrafting : MonoBehaviour
 
         Bamboo.BoxCollider.size = new Vector3(totalWidth, colliderHeight, colliderThickness);
         Bamboo.BoxCollider.center = new Vector3((totalWidth * 0.5f) - Bamboo.BambooRadius, colliderHeight * 0.5f, 0f);
+
+        // Handle TextMesh position
+        textMeshProUGUI.transform.localPosition = new Vector3(totalWidth * 0.5f, colliderHeight + textHeight, - colliderThickness * 0.6f);
+
+        // Set TextMesh text
+        textMeshProUGUI.text = childBamboos.Count + 1 + " / " + maxPieces;
 
         if (childBamboos.Count == maxPieces - 1) HandleCraftingComplete();
     }
