@@ -8,23 +8,27 @@ public class WaterScript : MonoBehaviour
 {
     
     public float WaterLevel = 0;
-    [SerializeField] private float WaterMax = 30;
-    private float WaterPercentage = 1;
-    private float minimumFlowPercentage = 3;
+    public float WaterMax = 30;
+    public float WaterPercentage = 1;
+    public float minimumFlowPercentage = 2;
     [SerializeField] private float WaterOutMin = 10;
     [SerializeField] private float SourceFlow = 3f;
     [SerializeField] private bool isSource = false;
     [SerializeField] private float DrainFlow = 2f;
     [SerializeField] private bool isDrain = false;
+
+    [SerializeField] private float OutflowMinPercentage = 0f;
+    [SerializeField] private float LimitPercentage = 10f;
+    [SerializeField] private float DrainLimitPercentage = 10f;
     [SerializeField] private float LeakLimitPercentage = 15f; 
     [SerializeField] private bool isLeak = false;
-    [SerializeField] private bool isBlocked = false;
+    public bool isBlocked = false;
     [SerializeField] private GameObject waterLevel;
 
     [SerializeField] private UnityEvent LeakCleared;
     public bool isFixed = false;
     public GameObject blockade;
-    float OutFlowRate = 30f;
+    public float OutFlowRate = 10f;
     float timeSinceLastValue = 0f;
     int waterVisualsCounter = 0;
     float WaterLevelY;
@@ -42,20 +46,21 @@ public class WaterScript : MonoBehaviour
             outPut.GetComponent<WaterScript>().InPuts.Add(this.gameObject);
         } 
     }
+    int count = 0;
+    int CountGoal=3;
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
+        /*if (count >= CountGoal) { */
         WaterPercentage = WaterLevel / WaterMax * 100;
-        Debug.Log(WaterPercentage);
-        if (isBlocked && blockade.activeSelf == false)
+        /*if (isBlocked && blockade.activeSelf == false)
         {
             blockade.SetActive(true);
         }
         if (isBlocked == false && blockade.activeSelf )
         {
             blockade.SetActive(false);
-        }
+        }*/
 
         if (isSource)
         {
@@ -73,13 +78,17 @@ public class WaterScript : MonoBehaviour
         {
             WaterLevel = WaterMax;
         }
-        if (InPuts != null && isBlocked==false)
+        if (InPuts != null && isBlocked==false && isLeak == false)
         {
             BackFlow();
         }
-        OutPutFlow();
-        UpdateWaterLevel();
-        
+        if(WaterPercentage >= OutflowMinPercentage) { 
+            OutPutFlow();
+        }
+            /*count = 0;
+        }
+        count++;*/
+        UpdateWaterLevel();    
     }
     void UpdateWaterLevel()
     {
@@ -93,7 +102,7 @@ public class WaterScript : MonoBehaviour
         timeSinceLastValue += Time.deltaTime;
         
         waterVisualsCounter++;
-        if(timeSinceLastValue >= 0.2f) { 
+        if(timeSinceLastValue >= 1f) { 
             lastWaterLevelY = currentWaterLevelY;
             currentWaterLevelY = WaterLevelY / waterVisualsCounter;
             WaterLevelY = 0;
@@ -107,19 +116,19 @@ public class WaterScript : MonoBehaviour
         foreach (GameObject outPut in OutPuts)
         {
             WaterScript outWS = outPut.GetComponent<WaterScript>();
-            if (!outWS.isBlocked && WaterPercentage > outWS.WaterPercentage + minimumFlowPercentage) { 
-                WaterLevel -= OutFlowRate * Time.deltaTime;
+            if (outWS.isBlocked == false && WaterPercentage > outWS.WaterPercentage + outWS.minimumFlowPercentage) { 
+                WaterLevel -= OutFlowRate * Time.fixedDeltaTime;
                 outWS.InPutFlow(OutFlowRate);
             }
         }
     }
     public void InPutFlow(float InFlow)
     {
-        WaterLevel += InFlow * Time.deltaTime;
+        WaterLevel += InFlow * Time.fixedDeltaTime;
     }
     void Source()
     {
-        WaterLevel += SourceFlow * Time.deltaTime;
+        WaterLevel += SourceFlow * Time.fixedDeltaTime;
     }
     void Leak()
     {
@@ -132,7 +141,7 @@ public class WaterScript : MonoBehaviour
     void Drain()
     {
         if (WaterPercentage >= 10f) { 
-            WaterLevel -= DrainFlow * Time.deltaTime;
+            WaterLevel -= DrainFlow * Time.fixedDeltaTime;
         }
     }
     void BackFlow()
@@ -140,8 +149,8 @@ public class WaterScript : MonoBehaviour
         foreach(GameObject input in InPuts) { 
         if(input.GetComponent<WaterScript>().WaterPercentage + minimumFlowPercentage < WaterPercentage)
             {
-            WaterLevel -= OutFlowRate * Time.deltaTime;
-            input.GetComponent<WaterScript>().InPutFlow(OutFlowRate * Time.deltaTime);
+            WaterLevel -= OutFlowRate * Time.fixedDeltaTime ;
+            input.GetComponent<WaterScript>().InPutFlow(OutFlowRate);
             }
         }
     }
