@@ -23,7 +23,7 @@ public class BalloonMovementController : MonoBehaviour
     {
         fireLight.enabled = false;
     }
-
+    
     private void FixedUpdate()
     {
         Vector3 targetXZ = target.position;
@@ -64,7 +64,54 @@ public class BalloonMovementController : MonoBehaviour
         transform.position = finalPosition;
 
         HandleFire();
+
+        //Physics.SyncTransforms();
         }
+    
+    /*
+    private void Update()
+    {
+        Vector3 targetXZ = target.position;
+        targetXZ.y = transform.position.y;
+
+        transform.position = Vector3.MoveTowards(transform.position, targetXZ, balloonHorizontalSpeed * Time.deltaTime);
+
+        float verticalMovement = 0f;
+
+        if (Mathf.Abs(leverJoint.angle) > leverDeadzoneAngle)
+        {
+            bool isRising = leverJoint.angle < 0f;
+
+            float value = leverJoint.angle;
+            float fromMin = isRising ? -leverDeadzoneAngle : leverDeadzoneAngle;
+            float fromMax = isRising ? leverJoint.limits.min : leverJoint.limits.max;
+            float toMin = 0f;
+            float toMax = isRising ? balloonVerticalSpeed : -balloonVerticalSpeed;
+
+            verticalMovement = RemapFloat(value, fromMin, fromMax, toMin, toMax);
+
+        }
+
+        Vector3 finalPosition = transform.position + Vector3.up * verticalMovement * Time.deltaTime;
+
+        if (IsDestinationReached(transform.position, targetXZ))
+        {
+            minPositionY = target.position.y;
+
+            if (IsDestinationReached(transform.position, target.position))
+            {
+                ChangeScene();
+            }
+        }
+
+        finalPosition.y = Mathf.Clamp(finalPosition.y, minPositionY, maxPositionY);
+
+        transform.position = finalPosition;
+
+        HandleFire();
+
+        Physics.SyncTransforms();
+    } */
 
     private float RemapFloat(float value, float fromMin, float fromMax, float toMin, float toMax)
     {

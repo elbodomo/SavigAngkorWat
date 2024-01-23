@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/HotAirBalloon.unity
     guid: 217a457a0dde5aa41b1aacf923950d68
@@ -15,6 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/TestLevel1.unity
     guid: 97981304f1a88db43a79e84ec50095ac
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0c49ea4dda94364479d01db8849f8f19,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: d477e3560388fc945a78faa8f144c146,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f25eeb54e701f5245ace5e95a798e23b,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ecac2249c8fa3504a838ac43afcb0788,
