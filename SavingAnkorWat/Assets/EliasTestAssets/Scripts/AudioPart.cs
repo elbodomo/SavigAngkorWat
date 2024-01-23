@@ -13,8 +13,8 @@ public class AudioPart : MonoBehaviour
     public AudioClip FeedbackAudio;
 
     // Update is called once per frame
-    void Update()
+    public void Done()
     {
-        
+        isDone = true;
     }
 }

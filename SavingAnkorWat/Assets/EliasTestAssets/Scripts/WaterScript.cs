@@ -140,7 +140,7 @@ public class WaterScript : MonoBehaviour
     }
     void Drain()
     {
-        if (WaterPercentage >= 10f) { 
+        if (WaterPercentage >= DrainLimitPercentage) { 
             WaterLevel -= DrainFlow * Time.fixedDeltaTime;
         }
     }

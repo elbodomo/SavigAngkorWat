@@ -379,7 +379,7 @@ MonoBehaviour:
   maxHeight: 3
   minRadius: 0.04
   maxRadius: 0.06
-  minChopVelocity: 4
+  minChopVelocity: 2
   minChopLength: 0.2
   visuals: {fileID: 7977586125546318735}
 --- !u!114 &-9130888752922031653
@@ -399,6 +399,7 @@ MonoBehaviour:
   layerMaskAfterCompletion:
     m_Bits: 2
   maxCraftLength: 0.65
+  textHeight: 1
   isCrafted: 0
 --- !u!114 &6039825988890884310
 MonoBehaviour:

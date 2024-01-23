@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
     private int curAudioIndex=0;
     AudioSource audioSource;
     private bool coroutineActive = false;
+    private bool isHintReady = false;
+    public bool isPressed = false;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -15,11 +17,12 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(audioParts[curAudioIndex].isDone.ToString() + audioParts[curAudioIndex].isActive.ToString() + curAudioIndex);
+        //Debug.Log(audioParts[curAudioIndex].isDone.ToString() + audioParts[curAudioIndex].isActive.ToString() + curAudioIndex);
         //if player solved puzzle 
         if (audioParts[curAudioIndex].isDone && audioParts[curAudioIndex].isActive)
         {
-            StopCoroutine("PlayHint");
+            StopCoroutine("TimeToHint");
+            isHintReady = false;
             coroutineActive = false;
             audioParts[curAudioIndex].isActive = false;
             audioSource.clip = audioParts[curAudioIndex].FeedbackAudio;
@@ -38,19 +41,38 @@ public class AudioManager : MonoBehaviour
         {
             if (coroutineActive == false)
             {
-                StartCoroutine("PlayHint");
+                StartCoroutine("TimeToHint");
                 coroutineActive = true;
             }
         }
 
-    }
-    IEnumerator PlayHint()
-    {
-        while(true)
+        if (isPressed && isHintReady)
         {
-            yield return new WaitForSeconds(audioParts[curAudioIndex].timeUntilHint);
-            audioSource.clip = audioParts[curAudioIndex].HintAudio;
+            Debug.Log("play");
             audioSource.Play();
+            isHintReady = false;
+            isPressed = false;
+            StartCoroutine("TimeToHint");
+            coroutineActive = true;
         }
+
+    }
+    IEnumerator TimeToHint()
+    {
+        
+       yield return new WaitForSeconds(audioParts[curAudioIndex].timeUntilHint);
+       HintReady();
+        
+    }
+    private void HintReady()
+    {
+        audioSource.clip = audioParts[curAudioIndex].HintAudio;
+        isHintReady = true;
+    }
+    
+    public void Pressed()
+    {
+        Debug.Log("pressed");
+        isPressed = true;
     }
 }
