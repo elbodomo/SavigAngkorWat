@@ -381,9 +381,9 @@ MonoBehaviour:
   onMaxDamsCrafted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58103487}
-        m_TargetAssemblyTypeName: BambooCraftManager, Assembly-CSharp
-        m_MethodName: CraftDebug
+      - m_Target: {fileID: 840430371}
+        m_TargetAssemblyTypeName: AudioPart, Assembly-CSharp
+        m_MethodName: Done
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -396,9 +396,9 @@ MonoBehaviour:
   onBambooChoppedSmallEnough:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58103487}
-        m_TargetAssemblyTypeName: BambooCraftManager, Assembly-CSharp
-        m_MethodName: ChopedSmallEnoughDebug
+      - m_Target: {fileID: 840430372}
+        m_TargetAssemblyTypeName: AudioPart, Assembly-CSharp
+        m_MethodName: Done
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4887,6 +4887,7 @@ MonoBehaviour:
   - {fileID: 840430381}
   - {fileID: 840430380}
   - {fileID: 840430379}
+  brtclip: {fileID: 8300000, guid: c39e0ffe13ad88f4eb132928545aec31, type: 3}
   isPressed: 0
   HintInfo:
     m_PersistentCalls:
@@ -13130,5 +13131,4 @@ SceneRoots:
   - {fileID: 64459544}
   - {fileID: 1293466629}
   - {fileID: 1481745116}
-  - {fileID: 1661098595}
   - {fileID: 2104916873}
