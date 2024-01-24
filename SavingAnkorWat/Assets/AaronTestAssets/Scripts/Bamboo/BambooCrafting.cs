@@ -24,6 +24,7 @@ public class BambooCrafting : MonoBehaviour
     private List<BambooCrafting> childBamboos = new List<BambooCrafting>();
 
     public bool isCrafted = false;
+    public float MaxCraftLenght => maxCraftLength;
 
     private void Awake()
     {
