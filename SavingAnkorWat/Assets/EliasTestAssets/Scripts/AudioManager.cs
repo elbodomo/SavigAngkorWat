@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AudioManager : MonoBehaviour
 {
     public List<AudioPart> audioParts = new List<AudioPart>();
+    [SerializeField] AudioClip brtclip;
     private int curAudioIndex=0;
     AudioSource audioSource;
     private bool coroutineActive = false;
     private bool isHintReady = false;
     public bool isPressed = false;
+    [SerializeField] private UnityEvent HintInfo;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -61,11 +64,15 @@ public class AudioManager : MonoBehaviour
     {
         
        yield return new WaitForSeconds(audioParts[curAudioIndex].timeUntilHint);
-       HintReady();
+        audioSource.clip = brtclip;
+        audioSource.Play();
+        yield return new WaitForSeconds(2);
+        HintReady();
         
     }
     private void HintReady()
     {
+        HintInfo.Invoke();
         audioSource.clip = audioParts[curAudioIndex].HintAudio;
         isHintReady = true;
     }
