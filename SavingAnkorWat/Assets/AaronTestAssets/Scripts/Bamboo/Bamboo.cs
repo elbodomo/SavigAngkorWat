@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Events;
 
 
 [RequireComponent(typeof(Rigidbody), typeof(XRGrabInteractable), typeof(BoxCollider))]
@@ -92,6 +93,12 @@ public class Bamboo : MonoBehaviour, IChoppable
             newBamboo.SetBambooRadius(BambooRadius);
             newBamboo.SetHeight(BambooHeight - chopLength);
             newBamboo.OnSpawnedAfterChop();
+
+            // Check for small peace to play event
+            if (newBamboo.BambooHeight < newBamboo.GetComponent<BambooCrafting>().MaxCraftLenght)
+            {
+                BambooCraftManager.Instance.onBambooChoppedSmallEnough?.Invoke();
+            }
         }
 
         // make own bamboo piece shorter

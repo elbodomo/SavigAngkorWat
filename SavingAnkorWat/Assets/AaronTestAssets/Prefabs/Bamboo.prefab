@@ -399,7 +399,7 @@ MonoBehaviour:
   layerMaskAfterCompletion:
     m_Bits: 2
   maxCraftLength: 0.65
-  textHeight: 1
+  textHeight: 0.1
   isCrafted: 0
 --- !u!114 &6039825988890884310
 MonoBehaviour:
