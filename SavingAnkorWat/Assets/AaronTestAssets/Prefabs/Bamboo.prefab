@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5637536962945110357}
-  - component: {fileID: 7786590972881907625}
+  - component: {fileID: 6508820232590017587}
   - component: {fileID: -9130888752922031653}
   - component: {fileID: 6039825988890884310}
   - component: {fileID: 6124785256356972832}
@@ -363,7 +363,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7786590972881907625
+--- !u!114 &6508820232590017587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,6 +382,19 @@ MonoBehaviour:
   minChopVelocity: 2
   minChopLength: 0.2
   visuals: {fileID: 7977586125546318735}
+  branchPrefabs:
+  - {fileID: -2158562999188828548, guid: 26c711db069fc874d88ddd48fc823ac2, type: 3}
+  - {fileID: 8458219847191424008, guid: 48e02f825124b004e9aa499448cce0e1, type: 3}
+  - {fileID: -7288124542804624461, guid: 8a89291f6855f074bbacc41acf5e7a35, type: 3}
+  - {fileID: -7775435588181679351, guid: 83883d57546e8c443a3f7649ef856948, type: 3}
+  minBranchScale: 1.2
+  maxBranchScale: 1.8
+  minBranchRotationZ: 5
+  maxBranchRotationZ: -50
+  branchBotOffset: 0.2
+  branchTopOffset: 0.05
+  minBranchCount: 5
+  maxBranchCount: 10
 --- !u!114 &-9130888752922031653
 MonoBehaviour:
   m_ObjectHideFlags: 0
