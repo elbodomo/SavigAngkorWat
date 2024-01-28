@@ -153,13 +153,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf5ca55a5bdf1c4991e04c969d939ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaterLevel: 30
+  WaterLevel: 15
   WaterMax: 30
+  WaterPercentage: 1
+  minimumFlowPercentage: 2
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
   DrainFlow: 2
   isDrain: 0
+  OutflowMinPercentage: 0
+  LimitPercentage: 10
+  DrainLimitPercentage: 10
   LeakLimitPercentage: 15
   isLeak: 0
   isBlocked: 0
@@ -169,6 +174,7 @@ MonoBehaviour:
       m_Calls: []
   isFixed: 0
   blockade: {fileID: 3021156131084846523}
+  OutFlowRate: 10
   InPuts: []
   OutPuts: []
 --- !u!1 &3021156131084846523
