@@ -9,7 +9,8 @@ public class BalloonMovementController : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private HingeJoint leverJoint;
     [SerializeField] private ParticleSystem[] fireParticle;
-    [SerializeField] private Light fireLight;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip fireAudio;
     [SerializeField] private float leverDeadzoneAngle = 15f;
     [SerializeField] private float balloonVerticalSpeed = 30f;
     [SerializeField] private float balloonHorizontalSpeed = 20f;
@@ -19,10 +20,6 @@ public class BalloonMovementController : MonoBehaviour
 
     private bool isEmitting;
 
-    private void Awake()
-    {
-        fireLight.enabled = false;
-    }
     
     private void FixedUpdate()
     {
@@ -127,16 +124,16 @@ public class BalloonMovementController : MonoBehaviour
             {
                 fireParticle[i].Play();
             }
-            fireLight.enabled = true;
             isEmitting = true;
+            PlayFireAudio(audioSource, fireAudio);
         }
         else if (isEmitting)
         {
             for (int i = 0; i < fireParticle.Length; i++)
             {
                 fireParticle[i].Stop();
+                audioSource.Stop();
             }
-            fireLight.enabled = false;
         }
     }
 
@@ -154,4 +151,9 @@ public class BalloonMovementController : MonoBehaviour
         SceneManager.LoadScene("TestLevel1", LoadSceneMode.Single);
     }
 
+    private void PlayFireAudio(AudioSource audioSource, AudioClip audioClip)
+    {
+        if (audioSource.isPlaying) return;
+        audioSource.PlayOneShot(audioClip);
+    }
 }

@@ -2,9 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class ChopToolBehaviour : MonoBehaviour
 {
     [SerializeField] private Transform bladeTransform;
+    [SerializeField] private AudioClip[] chopSoundClips;
+
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();  
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,11 +26,20 @@ public class ChopToolBehaviour : MonoBehaviour
             {
                 if (collision.gameObject.TryGetComponent(out IChoppable choppable))
                 {
+                    PlayChopSound(audioSource, chopSoundClips);
+
                     if (collision.relativeVelocity.magnitude < choppable.MinimumChopVelocity) return;
 
                     choppable.Chop(collision);
                 }
             }
         }
+    }
+    private void PlayChopSound(AudioSource audioSource, AudioClip[] audioClipArray)
+    {
+        if (audioSource.isPlaying) return;
+        int randomClipArray = Random.Range(0, audioClipArray.Length);
+
+        audioSource.PlayOneShot(audioClipArray[randomClipArray]);
     }
 }
