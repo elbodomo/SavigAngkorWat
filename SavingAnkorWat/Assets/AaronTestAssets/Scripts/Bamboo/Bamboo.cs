@@ -7,6 +7,7 @@ using UnityEngine.Events;
 
 
 [RequireComponent(typeof(Rigidbody), typeof(XRGrabInteractable), typeof(BoxCollider))]
+[RequireComponent (typeof(AudioSource))]
 public class Bamboo : MonoBehaviour, IChoppable
 {
     [SerializeField] private float minHeight = 2f;
@@ -19,6 +20,9 @@ public class Bamboo : MonoBehaviour, IChoppable
 
     [SerializeField] private Transform visuals;
 
+    [SerializeField] private AudioClip[] chopAudioFiles;
+
+    private AudioSource audioSource;
     private Rigidbody rb;
     private XRGrabInteractable xrGrabInteractable;
     private bool disableResizing = false;
@@ -47,6 +51,7 @@ public class Bamboo : MonoBehaviour, IChoppable
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         xrGrabInteractable = GetComponent<XRGrabInteractable>();
         BoxCollider = GetComponent<BoxCollider>();
@@ -103,6 +108,9 @@ public class Bamboo : MonoBehaviour, IChoppable
 
         // spawn new bamboo piece at chop point
         Vector3 spawnPosition = transform.position + transform.up * chopLength;
+
+        // play chopSound
+        PlayBambooBreakSound(audioSource, chopAudioFiles);
 
 
         // let Branches fall
@@ -182,5 +190,11 @@ public class Bamboo : MonoBehaviour, IChoppable
 
             branchInstances.Add(branch);
         }
+    }
+
+    private void PlayBambooBreakSound(AudioSource audioSource, AudioClip[] audioClipArray)
+    {
+        int randomClipArray = Random.Range(0, audioClipArray.Length);
+        audioSource.PlayOneShot(audioClipArray[randomClipArray]);
     }
 }

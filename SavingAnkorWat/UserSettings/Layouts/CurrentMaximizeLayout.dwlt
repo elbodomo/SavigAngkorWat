@@ -24,7 +24,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 328
+=======
+  controlID: 343
+>>>>>>> origin/AaronSound
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,10 +50,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 669.60004
     y: 474.4
     width: 457.20007
     height: 349
+=======
+    x: 936
+    y: 73
+    width: 597
+    height: 706
+>>>>>>> origin/AaronSound
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -66,7 +77,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 457.20007, y: 328}
+=======
+  m_TargetSize: {x: 597, y: 685}
+>>>>>>> origin/AaronSound
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -81,10 +96,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -182.88004
     m_HBaseRangeMax: 182.88004
     m_VBaseRangeMin: -131.2
     m_VBaseRangeMax: 131.2
+=======
+    m_HBaseRangeMin: -298.5
+    m_HBaseRangeMax: 298.5
+    m_VBaseRangeMin: -342.5
+    m_VBaseRangeMax: 342.5
+>>>>>>> origin/AaronSound
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -102,16 +124,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 457.20007
       height: 328
     m_Scale: {x: 1.25, y: 1.25}
     m_Translation: {x: 228.60004, y: 164}
+=======
+      width: 597
+      height: 685
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 298.5, y: 342.5}
+>>>>>>> origin/AaronSound
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -182.88004
       y: -131.2
       width: 365.76007
@@ -119,6 +149,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 571.5001, y: 436.25}
+=======
+      x: -298.5
+      y: -342.5
+      width: 597
+      height: 685
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 597, y: 706}
+>>>>>>> origin/AaronSound
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -148,7 +187,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 329
+=======
+  controlID: 296
+>>>>>>> origin/AaronSound
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +216,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 240
+=======
+  controlID: 272
+>>>>>>> origin/AaronSound
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,10 +238,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 798.4
     height: 400.8
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 239
+    height: 727
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/AaronSound
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -209,6 +263,99 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 238
+    height: 706
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 24fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 5}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 239
+    y: 0
+    width: 697
+    height: 727
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 8}
+  m_Panes:
+  - {fileID: 8}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+>>>>>>> origin/AaronSound
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -221,10 +368,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 73.6
     width: 797.4
     height: 379.8
+=======
+    x: 239
+    y: 73
+    width: 695
+    height: 706
+>>>>>>> origin/AaronSound
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -460,7 +614,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -544,9 +698,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -12.860916, y: 2.1159227, z: 0.428761}
     speed: 2
     m_Value: {x: -12.860916, y: 2.1159227, z: 0.428761}
+=======
+    m_Target: {x: -21.117018, y: -3.228917, z: 20.64983}
+    speed: 2
+    m_Value: {x: -21.117018, y: -3.228917, z: 20.64983}
+>>>>>>> origin/AaronSound
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -592,6 +752,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.055643693, y: -0.15955812, z: 0.009008207, w: 0.9855801}
     speed: 2
     m_Value: {x: -0.055643693, y: 0.1595581, z: -0.009008207, w: -0.9855801}
@@ -599,6 +760,15 @@ MonoBehaviour:
     m_Target: 4.1957736
     speed: 2
     m_Value: 4.1957736
+=======
+    m_Target: {x: -0.11186955, y: 0.42169437, z: -0.05251397, w: -0.89827967}
+    speed: 2
+    m_Value: {x: -0.11186927, y: 0.42169333, z: -0.052513838, w: -0.8982774}
+  m_Size:
+    m_Target: 15.048021
+    speed: 2
+    m_Value: 15.048021
+>>>>>>> origin/AaronSound
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -638,6 +808,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 798.4
     y: 0
     width: 330.40002
@@ -645,6 +816,15 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
+=======
+    x: 936
+    y: 0
+    width: 599
+    height: 727
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 2}
+>>>>>>> origin/AaronSound
   m_Panes:
   - {fileID: 8}
   m_Selected: 0
@@ -754,11 +934,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 0
     width: 669.6
     height: 370
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
+=======
+    y: 727
+    width: 1535
+    height: 220
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+>>>>>>> origin/AaronSound
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -811,7 +999,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets
+=======
+    - Assets/AaronTestAssets/Prefabs/Branches
+>>>>>>> origin/AaronSound
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -819,6 +1011,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
   - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: "C:\\Users\\abers\\OneDrive\\Masa\xFCst\xFC\\AngkorWatKranken\\SavigAngkorWat\\SavingAnkorWat"
@@ -829,6 +1022,18 @@ MonoBehaviour:
     m_SelectedIDs: 94830000
     m_LastClickedID: 33684
     m_ExpandedIDs: 000000009483000000ca9a3b
+=======
+  - Assets/AaronTestAssets/Prefabs/Branches
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: D:\GitHub\SavigAngkorWat\SavingAnkorWat
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: ce7f0000
+    m_LastClickedID: 32718
+    m_ExpandedIDs: 000000007c7e00007e7e0000807e0000827e0000847e0000867e0000a47f0000d07f000000ca9a3b
+>>>>>>> origin/AaronSound
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -856,7 +1061,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000009483000000ca9a3b
+=======
+    m_ExpandedIDs: 000000007c7e00007e7e0000807e0000827e0000847e0000867e000000ca9a3b
+>>>>>>> origin/AaronSound
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -933,10 +1142,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 7.2000003
     y: 570.4
     width: 739.8
     height: 245.80002
+=======
+    x: 0
+    y: 800
+    width: 1534
+    height: 199
+>>>>>>> origin/AaronSound
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -990,11 +1206,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1128.8
     y: 0
+<<<<<<< HEAD
     width: 407.19995
     height: 770.8
   m_MinSize: {x: 276, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
+=======
+    width: 385
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+>>>>>>> origin/AaronSound
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
