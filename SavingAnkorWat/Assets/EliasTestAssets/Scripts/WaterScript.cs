@@ -10,7 +10,7 @@ public class WaterScript : MonoBehaviour
     public float WaterLevel = 0;
     public float WaterMax = 30;
     public float WaterPercentage = 1;
-    public float minimumFlowPercentage = 2;
+    public float minimumFlowPercentage = 1;
     [SerializeField] private float WaterOutMin = 10;
     [SerializeField] private float SourceFlow = 3f;
     [SerializeField] private bool isSource = false;
