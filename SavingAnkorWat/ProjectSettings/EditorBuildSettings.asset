@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HotAirBalloon.unity
     guid: 217a457a0dde5aa41b1aacf923950d68
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestLevel1.unity
     guid: 97981304f1a88db43a79e84ec50095ac
+  - enabled: 1
+    path: Assets/Scenes/NewLevelWaterSystem.unity
+    guid: fcf467425fbe5cd419d01bfbf0bd2fe3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0c49ea4dda94364479d01db8849f8f19,
       type: 2}

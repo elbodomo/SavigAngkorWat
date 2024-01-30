@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &7745785571966968395
 Transform:
@@ -123,7 +123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 126
   m_IsActive: 1
 --- !u!4 &1784549775778335719
 Transform:
@@ -291,10 +291,45 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6738991161430389748, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5553451062575437225, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a6e94e2b6c7a604e86f4721777728ac,
         type: 3}
       propertyPath: m_Name
       value: Tree6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021726477123066175, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731696829835389974, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009647509393349750, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 4411788328206208482, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 6a6e94e2b6c7a604e86f4721777728ac,
         type: 3}
@@ -349,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 4742473837712756890, guid: 6a6e94e2b6c7a604e86f4721777728ac,
         type: 3}
       propertyPath: m_LODs.Array.data[3].screenRelativeHeight
-      value: 0.096374854
+      value: 0.016549548
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 6a6e94e2b6c7a604e86f4721777728ac,
         type: 3}
@@ -371,6 +406,16 @@ PrefabInstance:
       propertyPath: m_LODs.Array.data[4].renderers.Array.data[1].renderer
       value: 
       objectReference: {fileID: 5316955427212644354}
+    - target: {fileID: 5855294262808845108, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435257064062750875, guid: 6a6e94e2b6c7a604e86f4721777728ac,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

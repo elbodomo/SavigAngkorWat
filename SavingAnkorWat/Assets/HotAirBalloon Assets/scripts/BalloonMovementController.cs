@@ -148,7 +148,7 @@ public class BalloonMovementController : MonoBehaviour
 
     private void ChangeScene()
     {
-        SceneManager.LoadScene("TestLevel1", LoadSceneMode.Single);
+        SceneManager.LoadScene("NewLevelWaterSystem", LoadSceneMode.Single);
     }
 
     private void PlayFireAudio(AudioSource audioSource, AudioClip audioClip)
