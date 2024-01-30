@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e52fe9f3eb068c4da01e8d5b78117b3, type: 2}
+  - {fileID: 2100000, guid: d6f6286ab2d91df41a372d254b6e37c0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -155,11 +155,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaterLevel: 30
   WaterMax: 30
+  WaterPercentage: 1
+  minimumFlowPercentage: 0.5
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
   DrainFlow: 2
   isDrain: 0
+  OutflowMinPercentage: 0
+  LimitPercentage: 10
+  DrainLimitPercentage: 10
   LeakLimitPercentage: 15
   isLeak: 0
   isBlocked: 0
@@ -169,6 +174,7 @@ MonoBehaviour:
       m_Calls: []
   isFixed: 0
   blockade: {fileID: 3021156131084846523}
+  OutFlowRate: 10
   InPuts: []
   OutPuts: []
 --- !u!1 &3021156131084846523

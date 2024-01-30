@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e52fe9f3eb068c4da01e8d5b78117b3, type: 2}
+  - {fileID: 2100000, guid: d6f6286ab2d91df41a372d254b6e37c0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   WaterLevel: 15
   WaterMax: 30
   WaterPercentage: 1
-  minimumFlowPercentage: 2
+  minimumFlowPercentage: 0.5
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
