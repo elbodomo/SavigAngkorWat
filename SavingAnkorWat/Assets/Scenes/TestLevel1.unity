@@ -3849,6 +3849,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547905457062757692, guid: 36fb76984a670404ab7e2d7a79a88252,
         type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483809
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547905457062757692, guid: 36fb76984a670404ab7e2d7a79a88252,
+        type: 3}
       propertyPath: m_InteractionLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
@@ -6320,7 +6325,7 @@ GameObject:
   - component: {fileID: 1026611752}
   - component: {fileID: 1026611749}
   - component: {fileID: 1026611751}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9124,6 +9129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163530926392933384, guid: cfb40795fdec6ab47b33017ba39a8aba,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6523944821872160569, guid: cfb40795fdec6ab47b33017ba39a8aba,
         type: 3}

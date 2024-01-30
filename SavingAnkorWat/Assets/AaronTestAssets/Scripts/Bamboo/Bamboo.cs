@@ -23,6 +23,21 @@ public class Bamboo : MonoBehaviour, IChoppable
     private XRGrabInteractable xrGrabInteractable;
     private bool disableResizing = false;
 
+    // branches
+    [SerializeField] private BambooBranch[] branchPrefabs;
+    [SerializeField] private float minBranchScale = 0.8f;
+    [SerializeField] private float maxBranchScale = 1.2f;
+    [SerializeField, Range(-90f, 90f)] private float minBranchRotationZ = -30f;
+    [SerializeField, Range(-90f, 90f)] private float maxBranchRotationZ = 30f;
+    [SerializeField] private float branchBotOffset = 0.2f;
+    [SerializeField] private float branchTopOffset = 0.05f;
+    [SerializeField] private int minBranchCount;
+    [SerializeField] private int maxBranchCount;
+
+    private List<BambooBranch> branchInstances = new List <BambooBranch>();
+
+
+
     public float MinimumChopVelocity => 6f;
     public float BambooRadius { get; private set; }
     public float BambooHeight { get; private set; }
@@ -48,7 +63,10 @@ public class Bamboo : MonoBehaviour, IChoppable
         BambooRadius = Random.Range(minRadius, maxRadius);
 
         SetHeight(Random.Range(minHeight, maxHeight));
+        if(WasAlreadyChopped) return;
+        InstatiateBranches();
     }
+
     public void OnSpawnedAfterChop()
     {
         rb.isKinematic = false;
@@ -86,7 +104,28 @@ public class Bamboo : MonoBehaviour, IChoppable
         // spawn new bamboo piece at chop point
         Vector3 spawnPosition = transform.position + transform.up * chopLength;
 
+
+        // let Branches fall
+        for (int i = branchInstances.Count - 1; i >= 0; i--)
+        {
+            if (branchInstances[i].transform.localPosition.y >= chopLength)
+            {
+                branchInstances[i].Release();
+                branchInstances.RemoveAt(i);
+            }
+            else
+            {
+                branchInstances[i].transform.SetParent(null, true);
+            }
+        }
+
         GameObject newBambooGO = Instantiate(gameObject, spawnPosition, transform.rotation);
+
+        for (int i = branchInstances.Count - 1; i >= 0; i--)
+        {
+            branchInstances[i].transform.SetParent(transform, true);
+        }
+
 
         if (newBambooGO.TryGetComponent(out Bamboo newBamboo))
         {
@@ -117,5 +156,31 @@ public class Bamboo : MonoBehaviour, IChoppable
     public void SetBambooRadius(float radius)
     {
         BambooRadius = radius;
+    }
+
+    private void InstatiateBranches()
+    {
+        int branchCount = Random.Range(minBranchCount, maxBranchCount);
+        for (int i = 0; i < branchCount; i++)
+        {
+            int randomPrefabIndex = Random.Range(0, branchPrefabs.Length);
+            float branchHeight = Random.Range(branchBotOffset, BambooHeight - branchTopOffset);
+            float branchRotationZ = Random.Range(minBranchRotationZ, maxBranchRotationZ);
+
+            BambooBranch branch = Instantiate(branchPrefabs[randomPrefabIndex], transform);
+
+            Vector3 lookDirection = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f) * Vector3.forward;
+            Vector3 localPos = lookDirection * BambooRadius;
+            localPos.y = branchHeight;
+            branch.transform.localPosition = localPos;
+
+            branch.transform.localRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
+            branch.transform.Rotate(transform.right, branchRotationZ);
+
+            float randomBranchScale = Random.Range(minBranchScale, maxBranchScale);
+            branch.transform.localScale = Vector3.one * randomBranchScale;
+
+            branchInstances.Add(branch);
+        }
     }
 }
