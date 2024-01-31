@@ -409,10 +409,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bladeTransform: {fileID: 2344976558665994390}
   chopSoundClips:
-  - {fileID: 8300000, guid: b06f34e1849b0764ab18f91e401de87d, type: 3}
-  - {fileID: 8300000, guid: 5f466430f758c30408295f68c42e881e, type: 3}
-  - {fileID: 8300000, guid: d15d909176f043149a9ad82068f91f97, type: 3}
-  - {fileID: 8300000, guid: b5c6512a4d0135548833a8f54504c3b6, type: 3}
+  - {fileID: 8300000, guid: 521517e2bfb1a5c43b542b47117876ea, type: 3}
+  - {fileID: 8300000, guid: 5f91c86724db7aa4d98ce78491e1a245, type: 3}
+  - {fileID: 8300000, guid: c27764c193b7f034094dcf30647b67ce, type: 3}
+  - {fileID: 8300000, guid: b563499ed76cd924681579e01d739d49, type: 3}
 --- !u!82 &2513477027847851092
 AudioSource:
   m_ObjectHideFlags: 0

@@ -3847,16 +3847,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6547905457062757692, guid: 36fb76984a670404ab7e2d7a79a88252,
-        type: 3}
-      propertyPath: m_RaycastMask.m_Bits
-      value: 2147483809
-      objectReference: {fileID: 0}
-    - target: {fileID: 6547905457062757692, guid: 36fb76984a670404ab7e2d7a79a88252,
-        type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6551030244794898444, guid: 36fb76984a670404ab7e2d7a79a88252,
         type: 3}
       propertyPath: m_ImproveAccuracyWithSphereCollider

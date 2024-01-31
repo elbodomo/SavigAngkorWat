@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bea9e48a7b1e384a80b4c6ee8ca168e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPieces: 6
+  maxPieces: 5
   craftCheckPadding: 0.1
   layerMaskAfterCompletion:
     m_Bits: 2
