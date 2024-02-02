@@ -116,15 +116,15 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _ShadeStrength: 0.449
-    - _Shades: 5.9
-    - _Shift: 0.277
-    - _ShiftSize: 0
+    - _ShadeStrength: 0.2
+    - _Shades: 6
+    - _Shift: 0.54
+    - _ShiftSize: 0.86
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SpeclShades: 1
-    - _SpeclSize: 5
-    - _SpeclStrength: 0.5
+    - _SpeclShades: 3
+    - _SpeclSize: 3.52
+    - _SpeclStrength: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1

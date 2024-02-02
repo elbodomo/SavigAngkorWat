@@ -29977,7 +29977,7 @@ PrefabInstance:
     - target: {fileID: 500234122503700798, guid: d01266572e968ee4ba2ab5e2cebd95b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 500234122503700798, guid: d01266572e968ee4ba2ab5e2cebd95b9,
         type: 3}
@@ -30028,6 +30028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WaterLeak
+      objectReference: {fileID: 0}
+    - target: {fileID: 849737725762009237, guid: d01266572e968ee4ba2ab5e2cebd95b9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2460822306550129036, guid: d01266572e968ee4ba2ab5e2cebd95b9,
         type: 3}

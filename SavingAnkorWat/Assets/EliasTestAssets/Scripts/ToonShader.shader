@@ -7,8 +7,9 @@ Shader "Custom/ToonShader"
         _SpeclSize("SpeclSize", float) = 5
         _SpeclShades("SpeclShades", Range(0,10)) = 1
         _SpeclStrength("SpeclStrength", Range(0,1)) = 0.5
-        _ShadeStrength("Strength", Range(0,10)) = 0.3
-        _Shift("ShadeShift", Range(0,1)) = 0
+        _ShadeStrength("LightStrength", Range(-1,1)) = -0.3
+        _ColorStrength("ShadowStrength", Range(-1,1)) = -0.3
+        _Shift("ShadeShift", Range(0,1)) = 0.7
         _ShiftSize("ShiftSize", Range(0,2)) = 0
     }
     SubShader
@@ -44,6 +45,7 @@ Shader "Custom/ToonShader"
             uniform float _SpeclShades;
             uniform float _SpeclStrength;
             uniform float _ShadeStrength;
+            uniform float _ColorStrength;
             uniform float _Shift;
             uniform float _ShiftSize;
             v2f vert (appdata v)
@@ -76,12 +78,12 @@ Shader "Custom/ToonShader"
                     
                 }
                 
-                cosineAngle = cosineAngle*_ShiftSize + _Shift;
+                cosineAngle = cosineAngle * _ShiftSize + _Shift;
                 cosineAngle = max(cosineAngle,0);
                 cosineAngle = floor(cosineAngle * _Shades)/_Shades;
                 cosineAngle = min(cosineAngle,1);
-                cosineAngle = cosineAngle * _ShadeStrength ;
-                return (_Albedo + specl  + cosineAngle ) * _LightColor0*0.7;   
+                cosineAngle = cosineAngle + _ColorStrength;
+                return _Albedo + specl +  (_LightColor0 * cosineAngle)*_ShadeStrength;   
             }
             ENDCG
         }

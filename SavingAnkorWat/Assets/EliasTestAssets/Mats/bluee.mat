@@ -103,7 +103,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _ShadeStrength: 0.1
+    - _ShadeStrength: -0.4
     - _Shades: 6
     - _Shift: 0.7
     - _ShiftSize: 0.8
