@@ -7,6 +7,8 @@ public class ChopToolBehaviour : MonoBehaviour
 {
     [SerializeField] private Transform bladeTransform;
     [SerializeField] private AudioClip[] chopSoundClips;
+    [SerializeField] private float minPitch = 0.85f;
+    [SerializeField] private float maxPitch = 1.15f;
 
     private AudioSource audioSource;
 
@@ -39,7 +41,9 @@ public class ChopToolBehaviour : MonoBehaviour
     {
         if (audioSource.isPlaying) return;
         int randomClipArray = Random.Range(0, audioClipArray.Length);
+        float randomPitch = Random.Range(minPitch, maxPitch);
 
+        audioSource.pitch = randomPitch;
         audioSource.PlayOneShot(audioClipArray[randomClipArray]);
     }
 }

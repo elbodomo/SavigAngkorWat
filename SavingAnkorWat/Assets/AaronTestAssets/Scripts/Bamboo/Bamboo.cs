@@ -21,6 +21,8 @@ public class Bamboo : MonoBehaviour, IChoppable
     [SerializeField] private Transform visuals;
 
     [SerializeField] private AudioClip[] chopAudioFiles;
+    [SerializeField] private float minPitch = 0.85f;
+    [SerializeField] private float maxPitch = 1.15f;
 
     private AudioSource audioSource;
     private Rigidbody rb;
@@ -195,6 +197,9 @@ public class Bamboo : MonoBehaviour, IChoppable
     private void PlayBambooBreakSound(AudioSource audioSource, AudioClip[] audioClipArray)
     {
         int randomClipArray = Random.Range(0, audioClipArray.Length);
+        float randomPitch = Random.Range(minPitch, maxPitch);
+
+        audioSource.pitch = randomPitch;
         audioSource.PlayOneShot(audioClipArray[randomClipArray]);
     }
 }
