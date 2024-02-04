@@ -20,7 +20,9 @@ public class WaterScript : MonoBehaviour
     [SerializeField] private float OutflowMinPercentage = 0f;
     [SerializeField] private float LimitPercentage = 10f;
     [SerializeField] private float DrainLimitPercentage = 10f;
-    [SerializeField] private float LeakLimitPercentage = 15f; 
+    [SerializeField] private float LeakLimitPercentage = 15f;
+    [SerializeField] private float WaterVisualOffset = 0.16f;
+    [SerializeField] private float WaterVisualSize = 0.2f;
     [SerializeField] private bool isLeak = false;
     public bool isBlocked = false;
     [SerializeField] private GameObject waterLevel;
@@ -34,7 +36,7 @@ public class WaterScript : MonoBehaviour
     float WaterLevelY;
     float lastWaterLevelY = 0;
     float currentWaterLevelY = 0;
-
+    [SerializeField] List<GameObject> OverflowVisual = new List<GameObject>();
     [SerializeField] List<GameObject> InPuts = new List<GameObject>();
     [SerializeField] List<GameObject> OutPuts = new List<GameObject>();
     // Start is called before the first frame update
@@ -94,10 +96,10 @@ public class WaterScript : MonoBehaviour
     {
         if (isSource)
         {
-            WaterLevelY += ((OutPuts[0].GetComponent<WaterScript>().WaterLevel / OutPuts[0].GetComponent<WaterScript>().WaterMax * 0.3f) + transform.position.y + 0.15f);
+            WaterLevelY += ((OutPuts[0].GetComponent<WaterScript>().WaterLevel / OutPuts[0].GetComponent<WaterScript>().WaterMax * WaterVisualSize) + transform.position.y + WaterVisualOffset);
         }
         else { 
-            WaterLevelY += ((WaterLevel/WaterMax*0.3f) + transform.position.y + 0.15f);
+            WaterLevelY += ((WaterLevel/WaterMax* WaterVisualSize) + transform.position.y + WaterVisualOffset);
         }
         timeSinceLastValue += Time.deltaTime;
         
@@ -108,6 +110,20 @@ public class WaterScript : MonoBehaviour
             WaterLevelY = 0;
             timeSinceLastValue = 0;
             waterVisualsCounter = 0;
+            if (WaterPercentage>=LimitPercentage)
+            {
+                foreach (var item in OverflowVisual)
+                {
+                    item.SetActive(true);
+                }
+            }
+            else
+            {
+                foreach (var item in OverflowVisual)
+                {
+                    item.SetActive(false);
+                }
+            }
         }
         waterLevel.transform.position = new Vector3(waterLevel.transform.position.x, Mathf.Lerp(lastWaterLevelY,currentWaterLevelY,timeSinceLastValue), waterLevel.transform.position.z);
     }
