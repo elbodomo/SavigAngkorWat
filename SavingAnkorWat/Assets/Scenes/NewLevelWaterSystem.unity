@@ -15717,6 +15717,7 @@ GameObject:
   - component: {fileID: 1043417596}
   - component: {fileID: 1043417595}
   - component: {fileID: 1043417599}
+  - component: {fileID: 1043417600}
   m_Layer: 6
   m_Name: StoneSphere
   m_TagString: Untagged
@@ -15832,6 +15833,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1043417600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043417594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551163bd5211f8c4b9ef6d12ffcf177a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StoneCrashed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1044475758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33839,3 +33855,4 @@ SceneRoots:
   - {fileID: 561138312}
   - {fileID: 901634593}
   - {fileID: 1200684121}
+  - {fileID: 694768457}
