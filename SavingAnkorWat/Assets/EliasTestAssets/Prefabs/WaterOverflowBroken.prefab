@@ -167,6 +167,8 @@ MonoBehaviour:
   LimitPercentage: 10
   DrainLimitPercentage: 10
   LeakLimitPercentage: 15
+  WaterVisualOffset: 0.16
+  WaterVisualSize: 0.2
   isLeak: 0
   isBlocked: 0
   waterLevel: {fileID: 807474687299525314}
@@ -176,6 +178,7 @@ MonoBehaviour:
   isFixed: 0
   blockade: {fileID: 3021156131084846523}
   OutFlowRate: 10
+  OverflowVisual: []
   InPuts: []
   OutPuts: []
 --- !u!1 &3021156131084846523
@@ -479,6 +482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: channelOverflowBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 39303c1460fce394d93b3b5d2d6f605f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39303c1460fce394d93b3b5d2d6f605f,
         type: 3}
