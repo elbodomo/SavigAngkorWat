@@ -166,8 +166,8 @@ MonoBehaviour:
   LimitPercentage: 10
   DrainLimitPercentage: 10
   LeakLimitPercentage: 15
-  WaterVisualOffset: 0.15
-  WaterVisualSize: 0.3
+  WaterVisualOffset: 0.16
+  WaterVisualSize: 0.2
   isLeak: 0
   isBlocked: 0
   waterLevel: {fileID: 807474687299525314}
