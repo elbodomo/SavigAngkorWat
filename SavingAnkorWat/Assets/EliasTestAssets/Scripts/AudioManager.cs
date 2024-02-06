@@ -58,6 +58,7 @@ public class AudioManager : MonoBehaviour
             StartCoroutine("TimeToHint");
             coroutineActive = true;
         }
+        else { isPressed = false; }
 
     }
     IEnumerator TimeToHint()

@@ -29,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 0.03, y: 0.06, z: 0.06}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 500234122503700798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -166,6 +166,8 @@ MonoBehaviour:
   LimitPercentage: 10
   DrainLimitPercentage: 10
   LeakLimitPercentage: 15
+  WaterVisualOffset: 0.15
+  WaterVisualSize: 0.3
   isLeak: 0
   isBlocked: 0
   waterLevel: {fileID: 807474687299525314}
@@ -175,6 +177,7 @@ MonoBehaviour:
   isFixed: 0
   blockade: {fileID: 5671855633138656923}
   OutFlowRate: 10
+  OverflowVisual: []
   InPuts: []
   OutPuts: []
 --- !u!1 &5671855633138656923
@@ -369,6 +372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: channelDrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e61bb4aa60d3f04eb5d743e59668c19,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
