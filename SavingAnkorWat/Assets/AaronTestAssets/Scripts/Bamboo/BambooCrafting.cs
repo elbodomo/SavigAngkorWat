@@ -12,6 +12,7 @@ public class BambooCrafting : MonoBehaviour
     [SerializeField] private InteractionLayerMask layerMaskAfterCompletion;
     [SerializeField] private float maxCraftLength = 0.5f;
     [SerializeField] private float textHeight = 1f;
+    [SerializeField] private AudioClip bambooCraftSound;
 
     private XRGrabInteractable interactable;
 
@@ -127,6 +128,8 @@ public class BambooCrafting : MonoBehaviour
         // Set TextMesh text
         textMeshProUGUI.text = childBamboos.Count + 1 + " / " + maxPieces;
 
+        PlaySound(other.GetComponent<AudioSource>(), bambooCraftSound);
+
         if (childBamboos.Count == maxPieces - 1) HandleCraftingComplete();
     }
 
@@ -143,5 +146,10 @@ public class BambooCrafting : MonoBehaviour
     {
         interactable.interactionLayers = layerMaskAfterCompletion;
         BambooCraftManager.Instance.HandleCraftFinished(this);
+    }
+
+    private void PlaySound(AudioSource audioSource, AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
