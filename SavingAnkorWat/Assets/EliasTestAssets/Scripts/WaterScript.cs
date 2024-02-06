@@ -110,7 +110,7 @@ public class WaterScript : MonoBehaviour
             WaterLevelY = 0;
             timeSinceLastValue = 0;
             waterVisualsCounter = 0;
-            if (WaterPercentage>=LimitPercentage)
+            if (WaterPercentage>=OutflowMinPercentage)
             {
                 foreach (var item in OverflowVisual)
                 {
