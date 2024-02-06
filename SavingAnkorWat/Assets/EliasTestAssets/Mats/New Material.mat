@@ -101,6 +101,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _ColorStrength: -0.3
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -123,8 +124,8 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpeclShades: 3
-    - _SpeclSize: 3.52
-    - _SpeclStrength: 1
+    - _SpeclSize: 9.46
+    - _SpeclStrength: 0.045
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
