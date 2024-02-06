@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.GraphicsBuffer;
 
 public class BalloonMovementController : MonoBehaviour
 {
@@ -13,20 +15,41 @@ public class BalloonMovementController : MonoBehaviour
     [SerializeField] private AudioClip fireAudio;
     [SerializeField] private float leverDeadzoneAngle = 15f;
     [SerializeField] private float balloonVerticalSpeed = 30f;
-    [SerializeField] private float balloonHorizontalSpeed = 20f;
+    [SerializeField] private float maxBalloonHorizontalSpeed = 20f;
     [SerializeField] private float maxPositionY = 30f;
     [SerializeField] private float minPositionY = 20f;
     [SerializeField] private float treshold = 0.1f;
+    [SerializeField] private float speedIncreaseValue = 0.2f;
+    [SerializeField] private float groundHeight = 58f;
 
     private bool isEmitting;
+    private float minFlyHeight;
+    private float currentHorizontalSpeed;
 
-    
+    public float BalloonPosY => transform.position.y;
+    public float MaxPositionY => maxPositionY;
+    public float MinPositionY => minPositionY;
+    public float GroundHeight => groundHeight;
+
+
+
+    private void Start()
+    {
+        minFlyHeight = groundHeight;
+    }
+
     private void FixedUpdate()
     {
         Vector3 targetXZ = target.position;
         targetXZ.y = transform.position.y;
 
-        transform.position = Vector3.MoveTowards(transform.position, targetXZ, balloonHorizontalSpeed * Time.fixedDeltaTime);
+        if (transform.position.y > minPositionY - treshold)
+        {
+            currentHorizontalSpeed = currentHorizontalSpeed + speedIncreaseValue * Time.fixedDeltaTime;
+            currentHorizontalSpeed = Mathf.Clamp(currentHorizontalSpeed, 0, maxBalloonHorizontalSpeed);
+            transform.position = Vector3.MoveTowards(transform.position, targetXZ, currentHorizontalSpeed  * Time.fixedDeltaTime);
+            //Debug.Log(currentHorizontalSpeed);
+        }
 
         float verticalMovement = 0f;
 
@@ -38,25 +61,31 @@ public class BalloonMovementController : MonoBehaviour
             float fromMin = isRising ? -leverDeadzoneAngle : leverDeadzoneAngle;
             float fromMax = isRising ? leverJoint.limits.min : leverJoint.limits.max;
             float toMin = 0f;
-            float toMax = isRising ? balloonVerticalSpeed : -balloonVerticalSpeed;
+            float toMax = isRising ? -balloonVerticalSpeed : balloonVerticalSpeed;
 
             verticalMovement = RemapFloat(value, fromMin, fromMax, toMin, toMax);
 
         }
 
-        Vector3 finalPosition = transform.position + Vector3.up * verticalMovement * Time.fixedDeltaTime;
-
+        // Reset minPosY
         if (IsDestinationReached(transform.position, targetXZ))
         {
-            minPositionY = target.position.y;
+            minFlyHeight = target.position.y;
 
-            if(IsDestinationReached(transform.position, target.position)) 
-            {
-                ChangeScene();
-            }
+        }
+        else if (transform.position.y > minPositionY)
+        {
+            minFlyHeight = minPositionY;
         }
 
-        finalPosition.y = Mathf.Clamp(finalPosition.y, minPositionY, maxPositionY);
+        if (IsDestinationReached(transform.position, target.position))
+        {
+            ChangeScene();
+        }
+
+        Vector3 finalPosition = transform.position + Vector3.up * verticalMovement * Time.fixedDeltaTime;
+
+        finalPosition.y = Mathf.Clamp(finalPosition.y, minFlyHeight, maxPositionY);
 
         transform.position = finalPosition;
 
@@ -65,50 +94,6 @@ public class BalloonMovementController : MonoBehaviour
         //Physics.SyncTransforms();
         }
     
-    /*
-    private void Update()
-    {
-        Vector3 targetXZ = target.position;
-        targetXZ.y = transform.position.y;
-
-        transform.position = Vector3.MoveTowards(transform.position, targetXZ, balloonHorizontalSpeed * Time.deltaTime);
-
-        float verticalMovement = 0f;
-
-        if (Mathf.Abs(leverJoint.angle) > leverDeadzoneAngle)
-        {
-            bool isRising = leverJoint.angle < 0f;
-
-            float value = leverJoint.angle;
-            float fromMin = isRising ? -leverDeadzoneAngle : leverDeadzoneAngle;
-            float fromMax = isRising ? leverJoint.limits.min : leverJoint.limits.max;
-            float toMin = 0f;
-            float toMax = isRising ? balloonVerticalSpeed : -balloonVerticalSpeed;
-
-            verticalMovement = RemapFloat(value, fromMin, fromMax, toMin, toMax);
-
-        }
-
-        Vector3 finalPosition = transform.position + Vector3.up * verticalMovement * Time.deltaTime;
-
-        if (IsDestinationReached(transform.position, targetXZ))
-        {
-            minPositionY = target.position.y;
-
-            if (IsDestinationReached(transform.position, target.position))
-            {
-                ChangeScene();
-            }
-        }
-
-        finalPosition.y = Mathf.Clamp(finalPosition.y, minPositionY, maxPositionY);
-
-        transform.position = finalPosition;
-
-        HandleFire();
-
-        Physics.SyncTransforms();
-    } */
 
     private float RemapFloat(float value, float fromMin, float fromMax, float toMin, float toMax)
     {
@@ -118,7 +103,7 @@ public class BalloonMovementController : MonoBehaviour
 
     private void HandleFire()
     {
-        if (leverJoint.angle <= -leverDeadzoneAngle)
+        if (BalloonIsRising())
         {
             for (int i = 0; i < fireParticle.Length; i++)
             {
@@ -155,5 +140,14 @@ public class BalloonMovementController : MonoBehaviour
     {
         if (audioSource.isPlaying) return;
         audioSource.PlayOneShot(audioClip);
+    }
+
+    private bool BalloonIsRising()
+    {
+        if (leverJoint.angle >= leverDeadzoneAngle)
+        {
+            return true;
+        }
+        else return false;
     }
 }

@@ -387,6 +387,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4bdffc46223c80c4bb4bb6fadbc6b3fb, type: 3}
   - {fileID: 8300000, guid: 24bac0f4dc053e74991cd51883ac33cf, type: 3}
   - {fileID: 8300000, guid: 483c458a4134e174da3505a830502f7f, type: 3}
+  minPitch: 0.85
+  maxPitch: 1.15
   branchPrefabs:
   - {fileID: -2158562999188828548, guid: 26c711db069fc874d88ddd48fc823ac2, type: 3}
   - {fileID: 8458219847191424008, guid: 48e02f825124b004e9aa499448cce0e1, type: 3}
@@ -418,6 +420,7 @@ MonoBehaviour:
     m_Bits: 2
   maxCraftLength: 0.65
   textHeight: 0.1
+  bambooCraftSound: {fileID: 8300000, guid: 90b48ae4d2fa7db44a91254cab348b25, type: 3}
   isCrafted: 0
 --- !u!114 &6039825988890884310
 MonoBehaviour:
