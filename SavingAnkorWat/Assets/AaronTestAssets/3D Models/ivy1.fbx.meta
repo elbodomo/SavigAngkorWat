@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: branch
-    second: {fileID: 2100000, guid: 1900a18d824b49f4599f26d725251d79, type: 2}
+    second: {fileID: 2100000, guid: 5f1790153991e6e419c13e8df2a60d9d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: leaves
-    second: {fileID: 2100000, guid: 982fa12cb1f706d438f1d59d55869ba5, type: 2}
+    second: {fileID: 2100000, guid: b4378f81c83e79b49aab24c807ab024e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -58,7 +58,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -81,7 +81,7 @@ ModelImporter:
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4236190440788391264}
   - component: {fileID: 4412971759467008180}
   - component: {fileID: 6568062751081115572}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 7977586125546318735}
   - component: {fileID: 1522541481749288596}
   - component: {fileID: 8108550924267546720}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 4297766361163080251}
   - component: {fileID: 6163530926392933384}
   - component: {fileID: 6570688456213141874}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 4247386303664612460}
   - component: {fileID: 152370722782684517}
   - component: {fileID: 1576106083057933780}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bamboo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
