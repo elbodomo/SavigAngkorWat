@@ -3,7 +3,17 @@ guid: 13a1980918dba6c43880e04f50d78e86
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leaves
+    second: {fileID: 2100000, guid: b9285b351b6d6a24f83b262c0a2aa212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sticks
+    second: {fileID: 2100000, guid: 0cb151d033d0c104496b332fd10b8c9e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -71,7 +81,7 @@ ModelImporter:
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
