@@ -101,7 +101,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -158,7 +158,7 @@ MonoBehaviour:
   WaterLevel: 30
   WaterMax: 30
   WaterPercentage: 1
-  minimumFlowPercentage: 0.5
+  minimumFlowPercentage: 0.2
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
       m_Calls: []
   isFixed: 0
   blockade: {fileID: 0}
-  OutFlowRate: 10
+  OutFlowRate: 50
   OverflowVisual: []
   InPuts: []
   OutPuts: []
@@ -324,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 8091147843583689527}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: 0.3, z: -0.191}
+  m_LocalPosition: {x: -0.2091, y: 0.3, z: -0.164}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -426,8 +426,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b4a10c6816a926429cf3e8475b3f571,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7489283624103195833}
   m_SourcePrefab: {fileID: 100100000, guid: 0b4a10c6816a926429cf3e8475b3f571, type: 3}
+--- !u!1 &1319629058785987314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b4a10c6816a926429cf3e8475b3f571,
+    type: 3}
+  m_PrefabInstance: {fileID: 2202588365100283811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7489283624103195833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319629058785987314}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 1.204273, z: 1.9270778}
+  m_Center: {x: 0, y: -0.39786404, z: 0.46353894}
 --- !u!4 &1809201371149799496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b4a10c6816a926429cf3e8475b3f571,

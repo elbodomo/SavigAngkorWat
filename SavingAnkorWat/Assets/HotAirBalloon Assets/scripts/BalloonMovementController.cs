@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using static UnityEngine.GraphicsBuffer;
 
@@ -21,6 +22,8 @@ public class BalloonMovementController : MonoBehaviour
     [SerializeField] private float treshold = 0.1f;
     [SerializeField] private float speedIncreaseValue = 0.2f;
     [SerializeField] private float groundHeight = 58f;
+
+    [SerializeField] private UnityEvent BallonUp;
 
     private bool isEmitting;
     private float minFlyHeight;
@@ -76,6 +79,7 @@ public class BalloonMovementController : MonoBehaviour
         else if (transform.position.y > minPositionY)
         {
             minFlyHeight = minPositionY;
+            BallonUp.Invoke();
         }
 
         if (IsDestinationReached(transform.position, target.position))

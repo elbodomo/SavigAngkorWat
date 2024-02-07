@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2563369481588849100}
   - component: {fileID: 4924830230442905926}
   - component: {fileID: 4924124335235772897}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 500234122503700798}
   - component: {fileID: 9071681995995603059}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WaterCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
   WaterLevel: 30
   WaterMax: 30
   WaterPercentage: 1
-  minimumFlowPercentage: 0.5
+  minimumFlowPercentage: 0.2
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
@@ -166,6 +166,8 @@ MonoBehaviour:
   LimitPercentage: 10
   DrainLimitPercentage: 10
   LeakLimitPercentage: 15
+  WaterVisualOffset: 0.16
+  WaterVisualSize: 0.2
   isLeak: 0
   isBlocked: 0
   waterLevel: {fileID: 807474687299525314}
@@ -174,7 +176,8 @@ MonoBehaviour:
       m_Calls: []
   isFixed: 0
   blockade: {fileID: 3021156131084846523}
-  OutFlowRate: 10
+  OutFlowRate: 50
+  OverflowVisual: []
   InPuts: []
   OutPuts: []
 --- !u!1 &3021156131084846523
@@ -189,7 +192,7 @@ GameObject:
   - component: {fileID: 6955358187004598109}
   - component: {fileID: 5585390473296420256}
   - component: {fileID: 2833207695034696107}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,14 +370,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: deb8a4abe81c1fa4692bf5dc1eedc3ee,
         type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deb8a4abe81c1fa4692bf5dc1eedc3ee,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: deb8a4abe81c1fa4692bf5dc1eedc3ee,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6755866244474958677}
   m_SourcePrefab: {fileID: 100100000, guid: deb8a4abe81c1fa4692bf5dc1eedc3ee, type: 3}
+--- !u!1 &7235268180414497827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: deb8a4abe81c1fa4692bf5dc1eedc3ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 7541769893373688178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6755866244474958677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235268180414497827}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 1.9999996, z: 2.000506}
+  m_Center: {x: 0, y: 0, z: 0.5002531}
 --- !u!4 &8008251983812845209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: deb8a4abe81c1fa4692bf5dc1eedc3ee,
