@@ -22,7 +22,7 @@ public class WindManager : MonoBehaviour
     {
         soundVolume = RemapFloat(balloonMovementController.BalloonPosY, balloonMovementController.GroundHeight, balloonMovementController.MaxPositionY, minVolume, maxVolume);
         audioSource.volume = soundVolume;
-        Debug.Log("volume = " + audioSource.volume);
+        //Debug.Log("volume = " + audioSource.volume);
     }
 
     private float RemapFloat(float value, float fromMin, float fromMax, float toMin, float toMax)
