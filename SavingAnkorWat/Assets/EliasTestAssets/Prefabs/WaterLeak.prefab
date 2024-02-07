@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2563369481588849100}
   - component: {fileID: 4924830230442905926}
   - component: {fileID: 4924124335235772897}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 500234122503700798}
   - component: {fileID: 9071681995995603059}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WaterLeak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   WaterLevel: 10
   WaterMax: 10
   WaterPercentage: 1
-  minimumFlowPercentage: 0.5
+  minimumFlowPercentage: 0.2
   WaterOutMin: 10
   SourceFlow: 3
   isSource: 0
@@ -165,6 +165,8 @@ MonoBehaviour:
   LimitPercentage: 10
   DrainLimitPercentage: 10
   LeakLimitPercentage: 15
+  WaterVisualOffset: 0.15
+  WaterVisualSize: 0.3
   isLeak: 1
   isBlocked: 0
   waterLevel: {fileID: 807474687299525314}
@@ -173,7 +175,8 @@ MonoBehaviour:
       m_Calls: []
   isFixed: 0
   blockade: {fileID: 4710611570013676820}
-  OutFlowRate: 10
+  OutFlowRate: 50
+  OverflowVisual: []
   InPuts: []
   OutPuts: []
 --- !u!1 &4710611570013676820
@@ -188,7 +191,7 @@ GameObject:
   - component: {fileID: 3760915894609890435}
   - component: {fileID: 1494260657529043081}
   - component: {fileID: 1331484337565045995}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

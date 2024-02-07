@@ -578,8 +578,15 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.016666668
+  - time: 0.033333335
     functionName: playSoundFile1st
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5833333
+    functionName: playSoundFile2st
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -587,6 +594,13 @@ AnimationClip:
     messageOptions: 0
   - time: 1.5333333
     functionName: playSoundSile3rd
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.55
+    functionName: stoneCrashesTheWateSystem
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
