@@ -9220,7 +9220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 395994349622574091}
-  m_TurnSpeed: 60
+  m_TurnSpeed: 100
   m_LeftHandTurnAction:
     m_UseReference: 1
     m_Action:
@@ -10466,7 +10466,7 @@ MonoBehaviour:
   m_UIScroll: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   m_SmoothMotionEnabled: 0
-  m_SmoothTurnEnabled: 0
+  m_SmoothTurnEnabled: 1
   m_UIScrollingEnabled: 1
   m_RayInteractorChanged:
     m_PersistentCalls:
@@ -11676,37 +11676,37 @@ PrefabInstance:
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -225.09
+      value: -201.81998
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 65.6
+      value: 59.662468
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 222.51
+      value: 212.92458
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.51097965
+      value: -0.21735412
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.015611855
+      value: 0.020608969
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8590502
+      value: -0.9714054
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.026246382
+      value: -0.09329538
       objectReference: {fileID: 0}
     - target: {fileID: 6846174919019949186, guid: dd118b023b045d74b9041cb983435c58,
         type: 3}
@@ -12157,5 +12157,5 @@ SceneRoots:
   - {fileID: 1372029539}
   - {fileID: 635029090}
   - {fileID: 358430613}
-  - {fileID: 8646350259164159070}
   - {fileID: 1809615547}
+  - {fileID: 8646350259164159070}
