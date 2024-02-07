@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6846174919019949186}
   - component: {fileID: 8996091825218500275}
-  - component: {fileID: 4918410739736640500}
   - component: {fileID: 8203655652788689407}
   m_Layer: 0
   m_Name: ThirdPersonCam(setActiveForRecording)
@@ -85,14 +84,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &4918410739736640500
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6375512561629365519}
-  m_Enabled: 1
 --- !u!114 &8203655652788689407
 MonoBehaviour:
   m_ObjectHideFlags: 0
