@@ -6,11 +6,16 @@ using UnityEngine.Events;
 public class StoneAnimationBehavior : MonoBehaviour
 {
 
-    //sound1
-    //sound2
-    //sound3
-    //[SerializeField]
-    //private GameObject particles;
+    
+    [SerializeField]
+    private AudioSource audioSource1;
+    [SerializeField]
+    private AudioSource audioSource2;
+    [SerializeField]
+    private AudioSource audioSource3;
+
+
+
     //[SerializeField]
     //private GameObject leak;
     //[SerializeField]
@@ -33,15 +38,15 @@ public class StoneAnimationBehavior : MonoBehaviour
 
     void playSoundFile1st()
     {
-        //playSoundFile1st
+        audioSource1.Play();
     }
     void playSoundFile2st()
     {
-        //playSoundFile2nd        
+        audioSource2.Play();
     }
     void playSoundSile3rd()
     {
-        //playSoundFile3rd
+        audioSource3.Play();
     }
     void stoneCrashesTheWateSystem()
     {

@@ -585,8 +585,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.5833333
+  - time: 0.06666667
     functionName: playSoundFile2st
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.45
+    functionName: stoneCrashesTheWateSystem
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -594,13 +601,6 @@ AnimationClip:
     messageOptions: 0
   - time: 1.5333333
     functionName: playSoundSile3rd
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.55
-    functionName: stoneCrashesTheWateSystem
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
