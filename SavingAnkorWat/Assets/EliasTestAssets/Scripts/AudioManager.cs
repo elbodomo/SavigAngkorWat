@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     private bool isHintReady = false;
     public bool isPressed = false;
     [SerializeField] private UnityEvent HintInfo;
+    [SerializeField] private UnityEvent HintReset;
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -25,6 +26,7 @@ public class AudioManager : MonoBehaviour
         if (audioParts[curAudioIndex].isDone && audioParts[curAudioIndex].isActive)
         {
             StopCoroutine("TimeToHint");
+            HintReset.Invoke();
             isHintReady = false;
             coroutineActive = false;
             audioParts[curAudioIndex].isActive = false;
