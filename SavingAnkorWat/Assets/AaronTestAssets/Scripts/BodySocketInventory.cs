@@ -12,8 +12,10 @@ public class BodySocket
 
 public class BodySocketInventory : MonoBehaviour
 {
+    public CharacterController character;
     public GameObject head;
     public BodySocket[] bodySockets;
+    
 
     private Vector3 currentHeadPos;
     private Quaternion currentHeadRot;
@@ -30,7 +32,7 @@ public class BodySocketInventory : MonoBehaviour
 
     private void UpdateBodySocketHeight(BodySocket bodySocket)
     {
-        bodySocket.gameObject.transform.position = new Vector3(bodySocket.gameObject.transform.position.x, currentHeadPos.y * bodySocket.heightRatio, bodySocket.gameObject.transform.position.z);
+        bodySocket.gameObject.transform.position = new Vector3(bodySocket.gameObject.transform.position.x,currentHeadPos.y - character.height + character.height * bodySocket.heightRatio, bodySocket.gameObject.transform.position.z);
     }
 
     private void UpdateSocketInventory()
